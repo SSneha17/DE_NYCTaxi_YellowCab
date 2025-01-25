@@ -1,0 +1,9 @@
+{
+	"name": "adfnyctaxi-dev",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "cdd6ae52-913c-4fca-b0f9-cb183c844829",
+		"tenantId": "4f8ee04c-0ba4-4e10-94ba-e090d891eb69"
+	}
+}

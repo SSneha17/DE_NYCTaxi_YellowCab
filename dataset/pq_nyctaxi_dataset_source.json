@@ -1,0 +1,28 @@
+{
+	"name": "pq_nyctaxi_dataset_source",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_http_nyctaxi_source",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"month": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "trip-data/yellow_tripdata_2024-@{dataset().month}.parquet",
+					"type": "Expression"
+				}
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
