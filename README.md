@@ -27,6 +27,8 @@ The primary data source for this project is the [NYC Yellow Taxi Dataset](https:
 The data is stored in Parquet format for easy ingestion and processing.
 
 ## Architecture and Data Flow
+![image](https://github.com/user-attachments/assets/0863acff-931c-4679-84ce-58ad02cdf054)
+
 This project follows the **Medallion Architecture**, where data is processed in stages across three layers:
 
 ### 1. **Bronze Layer** (Raw Data):
